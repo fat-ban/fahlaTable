@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مولّد الجداول</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+   <div class="container">
+    <!----->
+    <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div class=" navbar-container">
+        <a href="#" class="logo">
+            <span>مولّد الجداول</span>
+            <span class="logo-icon">logo</span>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الجداول المحفوظة</a></li>
+            <li><a href="#">حول التطبيق</a></li>
+        </ul>
+        
+     
+        
+       
+    </div>
+   </nav>
+ <!------>
+  <div class="section-container">
+    <h2>🌸 مولّد الجداول الإبداعي</h2>
+
+    <label for="themeSelect">🎨 اختر اللون الرئيسي:</label>
+    <select id="themeSelect" onchange="changeTheme(this.value)">
+      <option value="rose">وردي</option>
+      <option value="blue">أزرق</option>
+      <option value="purple">بنفسجي</option>
+      <option value="green">أخضر</option>
+    </select>
+
+    <label for="headerTitle">📝 عنوان الجدول:</label>
+    <input type="text" id="headerTitle" placeholder="مثال: قائمة الطالبات">
+
+    <label for="headerDesc">📌 وصف أو ملاحظات:</label>
+    <textarea id="headerDesc" rows="2" placeholder="مثال: قائمة المسجلات في الدورة."></textarea>
+
+    <label for="columnsInput">أسماء الأعمدة:</label>
+    <input type="text" id="columnsInput" placeholder="الاسم, اللقب...">
+
+    <label for="logoUpload">تحميل الشعار:</label>
+    <input type="file" id="logoUpload" accept="image/*">
+    <img id="logoPreview" src="" alt=""/>
+
+    <label for="dataInput">(سطر لكل عنصر، مثال: سيرين, هند):</label>
+    <textarea id="dataInput" rows="6"></textarea>
+
+    <label for="footerText">✍️ التوقيع أو الملاحظات الختامية:</label>
+    <input type="text" id="footerText" placeholder="مثال: تم الإنشاء بواسطة سيرين">
+
+    <div class="btn-group">
+      <button onclick="generateTable()">✨ إنشاء الجدول</button>
+      <button onclick="saveAsJSON()">💾 حفظ الملف</button>
+      <input type="file" id="jsonUpload" accept="application/json" onchange="loadFromJSON(this)">
+    </div>
+
+    <div id="tableContainer"></div>
+
+    <div class="btn-group">
+      <button onclick="downloadPDF()">📄 تحميل PDF</button>
+      <button onclick="downloadWord()">📝 تحميل Word</button>
+    </div>
+  </div>
+  </div>
+   <!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <!---JS file-->
+  <script type="module" src="script.js"></script>
+  
+</body>
+</html>
