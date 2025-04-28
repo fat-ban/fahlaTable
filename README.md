@@ -1,7 +1,8 @@
 
 # مولّد الجداول الإبداعي لاكاديمية فحلة الدولية
 
-<img width="250px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/image1.PNG"> <img width="250px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/image2.PNG">
+<img width="200px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/image1.PNG"> <img width="200px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/data.PNG"><img width="200px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/table%20pdf.PNG"><img width="200px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/table%20pdf.PNG">  <img width="200px" alt="Tag-Bot" src="https://github.com/fat-ban/fahlaTable/blob/main/img/json%20file%20import.PNG">
+
 **
 أداة ويب لإنشاء جداول مخصصة بتصميم جميل مع خيارات تصدير متعددة.
 
